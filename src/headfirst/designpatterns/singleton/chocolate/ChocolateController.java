@@ -9,5 +9,6 @@ public class ChocolateController {
 
 		// will return the existing instance
 		ChocolateBoiler boiler2 = ChocolateBoiler.getInstance();
+		System.out.println("hello");
 	}
 }

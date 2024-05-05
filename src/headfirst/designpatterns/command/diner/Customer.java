@@ -9,7 +9,7 @@ public class Customer {
 	public void createOrder(Order order) {
 		this.order = order;
 	}
-	public void hungry() {
+	public void placeOrder() {
 		waitress.takeOrder(order);
 	}
 }

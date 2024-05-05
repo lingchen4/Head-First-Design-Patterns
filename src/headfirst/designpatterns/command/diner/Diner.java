@@ -6,6 +6,6 @@ public class Diner {
 		Waitress waitress = new Waitress();
 		Customer customer = new Customer(waitress);
 		customer.createOrder(new BurgerAndFriesOrder(cook));
-		customer.hungry();
+		customer.placeOrder();
 	}
 }

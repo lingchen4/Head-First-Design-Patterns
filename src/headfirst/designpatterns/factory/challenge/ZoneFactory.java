@@ -1,15 +1,17 @@
 package headfirst.designpatterns.factory.challenge;
 
+import java.util.Objects;
+
 public class ZoneFactory {
 	public Zone createZone(String zoneId) {
 		Zone zone = null;
-		if (zoneId == "US/Pacific") {
+		if (Objects.equals(zoneId, "US/Pacific")) {
 			zone = new ZonePacific();
 		}
-		else if (zoneId == "US/Mountain") {
+		else if (Objects.equals(zoneId, "US/Mountain")) {
 			zone = new ZoneMountain();
 		}
-		else if (zoneId == "US/Central") {
+		else if (Objects.equals(zoneId, "US/Central")) {
 			zone = new ZoneCentral();
 		}
 		else if (zoneId == "US/Eastern") {

@@ -11,7 +11,7 @@ public class RemoteControl {
 		onCommands = new Command[7];
 		offCommands = new Command[7];
  
-		for (int i = 0; i < 7; i++) {
+		for (int i = 0; i < onCommands.length; i++) {
 			onCommands[i] = () -> { };
 			offCommands[i] = () -> { };
 		}
